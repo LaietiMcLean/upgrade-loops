@@ -75,8 +75,23 @@ for (var dat in alien) {
     console.log(alien[dat]);
    }
 
+//Iteración 5
+const placesToTravel2 = [
+    {id: 5, name: 'Japan'}, 
+    {id: 11, name: 'Venecia'}, 
+    {id: 23, name: 'Murcia'}, 
+    {id: 40, name: 'Santander'}, 
+    {id: 44, name: 'Filipinas'}, 
+    {id: 59, name: 'Madagascar'}
+]
 
-
+for (var places in placesToTravel2) {
+    if (placesToTravel2[places].id == 11 || placesToTravel2[places].id == 40) {
+        continue;
+    } else {
+        console.log(placesToTravel2[places].name);
+    }
+}
 
 
 

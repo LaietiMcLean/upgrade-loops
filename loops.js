@@ -63,6 +63,29 @@ for (let place of placesToTravel) {
     console.log(place);
 }
 
+//Iteración 4
+const alien = {
+    name: 'Wormuck',
+    race: 'Cucusumusu',
+    planet: 'Eden',
+    weight: '259kg'
+}
+
+for (var dat in alien) {
+    console.log(alien[dat]);
+   }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

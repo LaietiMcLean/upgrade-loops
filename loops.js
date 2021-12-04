@@ -46,8 +46,27 @@ for (aprov in alumns){
         isApproved = false;
         console.log(alumns[aprov].name + ": suspenso");
     }  
-    
 } 
+
+
+//Iteración 3
+const placesToTravel = [
+    'Japon', 
+    'Venecia', 
+    'Murcia', 
+    'Santander', 
+    'Filipinas', 
+    'Madagascar'
+]
+
+for (let place of placesToTravel) {
+    console.log(place);
+}
+
+
+
+
+
 
 
 

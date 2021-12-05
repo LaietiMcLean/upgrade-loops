@@ -106,20 +106,26 @@ for (var places in placesToTravel2){
     console.log(placesToTravel2[places].name)
 }
 
- 
+console.log(placesToTravel2);
 
+//Iteración 6
+const toys = [
+    {id: 5, name: 'Buzz MyYear'}, 
+    {id: 11, name: 'Action Woman'}, 
+    {id: 23, name: 'Barbie Man'}, 
+    {id: 40, name: 'El gato con Guantes'},
+    {id: 40, name: 'El gato felix'}
+  ]
 
+    let toysDepurado = [];
+    for (var x of toys) {
+        if(x.name.includes("gato")) {
+            toys.splice(x, 0);
+    } else {
+        toysDepurado.push(x);
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
+console.log(toysDepurado);
 
 

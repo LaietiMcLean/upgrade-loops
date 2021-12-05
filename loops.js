@@ -76,6 +76,7 @@ for (var dat in alien) {
    }
 
 //Iteración 5
+//Con esta solución, imprimo el resultado omitiendo aquéllos que llevan id 11 ó 40.
 const placesToTravel2 = [
     {id: 5, name: 'Japan'}, 
     {id: 11, name: 'Venecia'}, 
@@ -85,15 +86,27 @@ const placesToTravel2 = [
     {id: 59, name: 'Madagascar'}
 ]
 
+//for (var places in placesToTravel2) {
+    //if (placesToTravel2[places].id == 11 || placesToTravel2[places].id == 40) {
+        //continue;
+    //} else {
+        //console.log(placesToTravel2[places].name);
+    //}
+//}
+
+//Iteración 5.1 (corrección tras releer el enunciado)
+//Con esta solución, elimino del array aquéllos que llevan id 11 ó 40 e imprimo el nuevo array.
+
 for (var places in placesToTravel2) {
     if (placesToTravel2[places].id == 11 || placesToTravel2[places].id == 40) {
-        continue;
-    } else {
-        console.log(placesToTravel2[places].name);
+        placesToTravel2.splice(places, 1);
     }
 }
+for (var places in placesToTravel2){
+    console.log(placesToTravel2[places].name)
+}
 
-
+ 
 
 
 
